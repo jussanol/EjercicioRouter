@@ -1,8 +1,3 @@
-
-.razaBody{
-    background-image: url("../../../../assets/imgs/fondo-card.png");
-}
-
 .tarjetas{
     display: flex;
     flex-wrap: wrap; 
@@ -11,34 +6,3 @@
 .razaCard {
     margin: 20px;
 }
-
-.razaBody h5{
-    color:#346c34;
-}
-.razaBody .btn-primary{
-    background-color:#346c34;
-    align-items: center;
-        margin-right: auto;
-    margin-left: auto;
-    display: table;
-}
-
-.imag-escudoAlliance{
-    width: 50px;
-    height: 50px;
-    margin-top: -44px;
-    background: url(../../../../assets/imgs/escudos/alliance.png) no-repeat center center;
-    background-size: cover;
-}
-
-.imag-escudoHorde{
-    width: 50px;
-    height: 50px;
-    margin-top: -44px;
-    background: url(../../../../assets/imgs/escudos/horde.png) no-repeat center center;
-    background-size: cover;
-}
-
-/*.card-title{
-    margin-top: -20px;
-}*/

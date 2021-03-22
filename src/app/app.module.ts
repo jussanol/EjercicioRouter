@@ -7,6 +7,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RazasListComponent } from './entities/razas/razas-list/razas-list.component';
 import { RazasDetailComponent } from './entities/razas/razas-detail/razas-detail.component';
+import { RazaItemComponent } from './entities/razas/raza-item/raza-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RazasDetailComponent } from './entities/razas/razas-detail/razas-detail
     NavbarComponent,
     HomeComponent,
     RazasListComponent,
-    RazasDetailComponent
+    RazasDetailComponent,
+    RazaItemComponent
   ],
   imports: [
     BrowserModule,
