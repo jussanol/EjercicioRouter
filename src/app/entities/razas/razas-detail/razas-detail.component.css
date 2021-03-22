@@ -1,0 +1,43 @@
+.contenido {
+    background: url(../../../../assets/imgs/fondo-jumbotron.png) no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 10px;
+}
+
+.contenidoDetalle{
+    display: flex;
+    padding: 25px;
+
+}
+
+.imag-escudoAlliance{
+    width: 50px;
+    height: 50px;
+    margin-top: 153px;
+    background: url(../../../../assets/imgs/escudos/alliance.png) no-repeat center center;
+    background-size: cover;  
+    margin-right: -50px;
+    z-index: 2;
+}
+
+.imag-escudoHorde{
+    width: 50px;
+    height: 50px;
+    margin-top: 153px;
+    background: url(../../../../assets/imgs/escudos/horde.png) no-repeat center center;
+    background-size: cover;
+    margin-right: -50px;
+    z-index: 2;
+}
+
+.contenido p{
+    padding: 30px;
+}
+
+.contenido .btn-primary{
+    background-color:#346c34;
+
+    margin-left: auto;
+    display: table;
+}

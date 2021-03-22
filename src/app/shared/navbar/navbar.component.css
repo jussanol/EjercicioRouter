@@ -1,0 +1,9 @@
+.navbar{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}

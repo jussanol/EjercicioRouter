@@ -1,0 +1,11 @@
+<div class="contenido">
+    <h1>Los {{raza.nombre |uppercase}}</h1>
+    <div class="contenidoDetalle">
+        <div class="imag-escudo"
+            [ngClass]="{'imag-escudoAlliance': raza.tipo == RAZATYPE.ALIANZA, 'imag-escudoHorde': raza.tipo == RAZATYPE.HORDA}">
+            &nbsp;</div>
+        <img [src]="raza.urlImage" alt="raza">
+        <p>{{raza.description}}</p>
+    </div>
+    <a [routerLink]="[ '/razas']" class="btn btn-primary">Volver</a>
+</div>
