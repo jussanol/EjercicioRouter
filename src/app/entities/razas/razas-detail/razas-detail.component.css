@@ -11,7 +11,7 @@
 
 }
 
-.imag-escudoAlliance{
+/* .imag-escudoAlliance{
     width: 50px;
     height: 50px;
     margin-top: 153px;
@@ -29,8 +29,11 @@
     background-size: cover;
     margin-right: -50px;
     z-index: 2;
+} */
+.imagenEscudo {
+    position: absolute;
+    margin-top: 186px;
 }
-
 .contenido p{
     padding: 30px;
 }
