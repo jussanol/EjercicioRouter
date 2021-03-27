@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RazasListComponent } from './entities/razas/razas-list/razas-list.component';
 import { RazasDetailComponent } from './entities/razas/razas-detail/razas-detail.component';
 import { RazaItemComponent } from './entities/razas/raza-item/raza-item.component';
+import { FaccionPipe } from './shared/pipes/faccion.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RazaItemComponent } from './entities/razas/raza-item/raza-item.componen
     HomeComponent,
     RazasListComponent,
     RazasDetailComponent,
-    RazaItemComponent
+    RazaItemComponent,
+    FaccionPipe
   ],
   imports: [
     BrowserModule,

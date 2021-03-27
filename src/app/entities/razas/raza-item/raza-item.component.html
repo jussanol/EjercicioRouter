@@ -1,8 +1,9 @@
 <img class="card-img-top" [src]="raza.urlImage" alt="Card image cap">
 <div class="card-body razaBody">
-    <div class="imag-escudo"
+    <!-- <div class="imag-escudo"
         [ngClass]="{'imag-escudoAlliance': raza.tipo == RAZATYPE.ALIANZA, 'imag-escudoHorde': raza.tipo == RAZATYPE.HORDA}">
-        &nbsp;</div>
+        &nbsp;</div> -->
+    <div [innerHTML]='raza.tipo | faccion'>&nbsp;</div>
     <h5 class="card-title">{{raza.nombre|uppercase}}</h5>
     <p class="card-text">{{raza.description}}</p>
     <a [routerLink]="[ '/razas', raza.id ]" class="btn btn-primary">Detalle</a>
