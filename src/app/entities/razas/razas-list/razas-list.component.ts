@@ -18,7 +18,7 @@ export class RazasListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.listaRazas = this.razasService.getRazas();
+    this.razasService.getRazas().subscribe(razas => this.listaRazas = razas);
   }
 
 }

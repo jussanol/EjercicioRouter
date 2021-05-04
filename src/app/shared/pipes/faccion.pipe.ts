@@ -6,13 +6,11 @@ import { RAZATYPE } from 'src/app/entities/razas/raza.model';
 })
 export class FaccionPipe implements PipeTransform {
 
-  transform(faccion: RAZATYPE): String {
-    if (faccion == RAZATYPE.ALIANZA) {
+  transform(faccion: boolean): String {
+    if (faccion) {
       return "<img class='imagen' src='../../../assets/imgs/escudos/alliance.png'></img>";
-    } else if (faccion == RAZATYPE.HORDA) {
-      return "<img class='imagen' src='../../../assets/imgs/escudos/horde.png'></img>";
     } else {
-      return "";
+      return "<img class='imagen' src='../../../assets/imgs/escudos/horde.png'></img>";
     }
   }
 

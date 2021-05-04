@@ -12,12 +12,14 @@ export class RazasDetailComponent implements OnInit {
 
   public idRaza: number;
   public error: string = "";
-  public raza: Raza;
+  public raza!: Raza;
   RAZATYPE = RAZATYPE;
 
   constructor(private router: ActivatedRoute, private razaService: RazasService) {
     this.idRaza = this.router.snapshot.params.idRaza;
-    this.raza = <Raza>this.razaService.getRaza(this.idRaza);
+    alert(this.idRaza);
+    //this.raza = <Raza>this.razaService.getRaza(this.idRaza);
+    this.razaService.getRaza(this.idRaza).subscribe(raza => this.raza = raza);
   }
 
   ngOnInit(): void {

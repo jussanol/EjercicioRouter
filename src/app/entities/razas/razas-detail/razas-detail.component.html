@@ -4,9 +4,9 @@
         <!-- <div class="imag-escudo"
             [ngClass]="{'imag-escudoAlliance': raza.tipo == RAZATYPE.ALIANZA, 'imag-escudoHorde': raza.tipo == RAZATYPE.HORDA}">
             &nbsp;</div> -->
-        <div class="imagenEscudo" [innerHTML]='raza.tipo | faccion'>&nbsp;</div>
-        <img [src]="raza.urlImage" alt="raza">
-        <p>{{raza.description}}</p>
+        <div class="imagenEscudo" [innerHTML]='raza.razaAlianza | faccion'>&nbsp;</div>
+        <img [src]="raza.urlImagen" alt="raza">
+        <p>{{raza.descripcion}}</p>
     </div>
     <a [routerLink]="[ '/razas']" class="btn btn-primary">Volver</a>
 </div>

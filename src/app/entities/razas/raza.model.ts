@@ -6,16 +6,16 @@ export enum RAZATYPE {
 export class Raza {
     id: number;
     nombre: string;
-    description: string;
-    urlImage: string;
-    tipo: RAZATYPE;
+    descripcion: string;
+    urlImagen: string;
+    razaAlianza: boolean;
 
-    constructor(id: number, nombre: string, description: string, urlImage: string, tipo: RAZATYPE) {
+    constructor(id: number, nombre: string, descripcion: string, urlImagen: string, razaAlianza: boolean) {
         this.id = id;
         this.nombre = nombre;
-        this.description = description;
-        this.urlImage = urlImage;
-        this.tipo = tipo;
+        this.descripcion = descripcion;
+        this.urlImagen = urlImagen;
+        this.razaAlianza = razaAlianza;
     }
 
 }
