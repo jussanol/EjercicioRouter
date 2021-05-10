@@ -17,7 +17,6 @@ export class RazasDetailComponent implements OnInit {
 
   constructor(private router: ActivatedRoute, private razaService: RazasService) {
     this.idRaza = this.router.snapshot.params.idRaza;
-    alert(this.idRaza);
     //this.raza = <Raza>this.razaService.getRaza(this.idRaza);
     this.razaService.getRaza(this.idRaza).subscribe(raza => this.raza = raza);
   }
